@@ -152,7 +152,7 @@ def evaluate(args, model, features, tag="dev", generate=False):
         tag + "_P": precision * 100,
         tag + "_R": recall * 100
     }
-    return f1, output
+    return f1, output, preds
 
 
 def to_official_bio(args, preds, features):
